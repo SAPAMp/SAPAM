@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Contratación de Servicios de Agua</title>
+
+  <!-- Bootstrap -->
+  <link href="../Vendors/bootstrap/bootstrap.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="../vendors/font-awesome/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <!--<link href="../vendors/nprogress/nprogress.css" rel="stylesheet">-->
+  <!-- Custom Theme Style -->
+  <link href="../build/CSS/custom.min.css" rel="stylesheet">
+
+<script src="https://use.fontawesome.com/ebf8ef7d6d.js"></script>
+
+</head>
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left_col">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0;">
+            <a href="index.html" class="site_title"><i class="fa fa-clone"></i> <span>SAPAM</span></a>
+          </div>
+          <div class="clearfix"></div>
+          <br />
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <h3>Modulos</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a></li>
+                <li><a><i class="fa fa-edit"></i> Contratos <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="wizardSolServicio.html">Solicitud de Servicio</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-table"></i> Reportes <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="tables.html">Reportes</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-bar-chart-o"></i> Dashboard <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="chartjs.html">Chart JS</a></li>
+                    <li><a href="chartjs2.html">Chart JS2</a></li>
+                    <li><a href="morisjs.html">Moris JS</a></li>
+                    <li><a href="echarts.html">ECharts</a></li>
+                    <li><a href="other_charts.html">Other Charts</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- /sidebar menu -->
+
+
+        </div>
+      </div>
+
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="nav_menu">
+          <nav>
+            <div class="nav toggle">
+              <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <!--<img src="images/img.jpg" alt="">-->Invitado
+                  <span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- /top navigation -->
+
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <div class="">
+          <div class="page-title">
+            <div class="title_left">
+              <h3>Contración de Servicio de Agua</h3>
+            </div>
+
+            <div class="title_right">
+              <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Buscar por contrato...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">Ir</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>Contratación de Servicios de Agua</h2>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                  <!-- Smart Wizard -->
+                  <p>Llena el siguiente formulario para el registro de un contrato de servicio de agua.</p>
+                  <div id="wizard" class="form_wizard wizard_horizontal">
+                    <ul class="wizard_steps">
+                      <li class="col-lg-4 col-xs-4 col-md-4 no-padding">
+                        <a href="#step-1" class="selected" isdone="1" rel="1">
+                          <span class="step_no">1</span>
+                          <span class="step_descr">
+                                Paso 1<br />
+                                <small>Solicitud de Servicio</small>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="col-lg-4 col-xs-4 col-md-4 no-padding">
+                        <a href="#step-2" class="disabled" isdone="0" rel="2">
+                          <span class="step_no">2</span>
+                          <span class="step_descr">
+                                            Paso 2<br />
+                                            <small>Presupuesto</small>
+                                        </span>
+                        </a>
+                      </li>
+                      <li class="col-lg-4 col-xs-4 col-md-4 no-padding">
+                        <a href="#step-3" class="disabled" isdone="0" rel="3">
+                          <span class="step_no">3</span>
+                          <span class="step_descr">
+                              Paso 3<br />
+                              <small>Contrato</small>
+                          </span>
+                        </a>
+                      </li>
+                      <!--<li class="col-lg-3 col-xs-3 col-md-3">
+                        <a href="#step-4" class="disabled" isdone="0" rel="4">
+                          <span class="step_no">4</span>
+                          <span class="step_descr">
+                                            Step 4<br />
+                                            <small>Step 4 description</small>
+                                        </span>
+                        </a>
+                      </li>-->
+                    </ul>
+                    <div class="stepContainer">
+                      <div id="step-1" class="content">
+                        <form class="form-horizontal form-label-left">
+                        <!--Formulario de contratación de servicios de Agua-->
+                                <div class="row">
+                                <div class="col-lg-12">
+
+
+                                <h2>Creacion Número de Contrato</h2>
+                                <br/>
+                                </br/>
+                                  <!----Nombre Completo-->
+                                  <div class="row">
+                                      <div class="col-lg-4 col-xs-4 col-md-4">
+                                          <div class="form-group">
+                                              <label for="Nombre">Nombre:</label>
+                                              <input id="nombre" name="nombre" value="" type="text" placeholder="Escribe Nombre" class="form-control">
+                                          </div>
+                                      </div>
+
+                                      <div class="col-lg-8 col-xs-8 col-md-8">
+                                          <div class="form-group">
+                                              <label for="Apellido Paterno">Apellido:</label>
+                                              <input id="apeidoPaterno" name="apeidoPaterno" value="" type="text" placeholder="Escribe Apellido Paterno" class="form-control">
+                                          </div>
+                                      </div>
+
+
+                                  </div>
+                                  <!--Dirección-->
+                                  <div class="row">
+                                      <div class="col-lg-8 col-xs-8 col-md-8">
+                                          <div class="form-group">
+                                            <label for="direccion">Dirección:</label>
+                                              <input id="direccion" name="direccion" value="" type="text" placeholder="Escribe dirección" class="form-control input-md" required="required">
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 col-xs-4 col-md-4">
+                                          <div class="form-group">
+                                              <label for="correo">Correo:</label>
+                                                  <input id="correo" name="correo" value="" type="text" placeholder="Escribe correo" class="form-control">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--Colonia-->
+                                  <div class="row">
+                                      <div class="col-lg-8 col-xs-8 col-md-8">
+                                          <div class="form-group">
+                                            <label for="colonia">Colonia:</label>
+                                              <input id="colonia" name="colonia" value="" type="text" placeholder="Escribe colonia" class="form-control input-md" required="required">
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4 col-xs-4 col-md-4">
+                                          <div class="form-group">
+                                              <label for="telefono">Telefono:</label>
+                                              <div class=".col-xs-6 .col-md-4">
+                                                  <input id="telefono" name="numtelefono" value="" type="text"  class="form-control input-md">
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--  ubicación de la toma -->
+                                  <!----Nombre Ubicacion de la toma-->
+                                  <div class="row">
+                                      <div class="col-lg-8">
+                                          <div class="form-group">
+                                            <fieldset>
+                                              <legend>Ubicación de la toma</legend>
+                                            <div class="row">
+                                                <div class="col-lg-2">
+                                                    <div class="form-group">
+                                                        <label for="sector">Sector:</label>
+                                                        <input id="sector" name="sector" value="" type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-2">
+                                                    <div class="form-group">
+                                                        <label for="manzana">Manzana:</label>
+                                                        <input id="manzana" name="manzana" value="" type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-2">
+                                                    <div class="form-group">
+                                                        <label for="lote">Lote:</label>
+                                                        <input id="lote" name="lote" value="" type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label  for="ruta">Ruta:</label>
+                                                        <input id="ruta" name="ruta" value="" type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <div class="form-group">
+                                                        <label for="progresivo">Progresivo:</label>
+                                                        <input id="progresivo" name="progresivo" value="" type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </fieldset>
+                                          </div>
+                                        </div>
+                                            <div class="col-lg-4 col-xs-4 col-md-4">
+                                                <div class="form-group">
+                                                    <label for="habitantes">Habitantes:</label>
+                                                    <div class="">
+                                                        <input id="habitantes" name="habitantes" value="" type="text"  class="form-control input-md">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  <!--giro-->
+                                  <div class="row">
+                                      <div class="col-lg-12 col-xs-12 col-md-12">
+                                          <div class="form-group">
+                                              <label for="title">Giro:</label>
+                                              <div class="">
+                                                  <select name="giro_id" class="form-control">
+                                                        <option value="1">Tipo 1</option>
+                                                        <option value="2">Tipo 2</option>
+                                                        <option value="3">Tipo 3</option>
+                                                  </select>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <br/>
+                      <div id="step-2" class="content">
+                          <!--Fecha de inspección-->
+                          <div class="row">
+                              <div class="col-lg-4 col-xs-4 col-md-4">
+                                  <div class="form-group">
+                                      <label for="Nombre">Fecha de inspección:</label>
+                                      <input id="nombre" name="f_inspeccion" value="" type="text" placeholder="" class="form-control">
+                                  </div>
+                              </div>
+                          </div>
+                          <!--Tipo de toma-->
+                          <div class="row">
+                              <div class="col-lg-8 col-xs-8 col-md-8">
+                                  <div class="form-group">
+                                      <label for="title">Tipo de toma:</label>
+                                      <div class="">
+                                          <select name="tipo_toma" class="form-control">
+                                            <option value="1">Tipo 1</option>
+                                            <option value="2">Tipo 2</option>
+                                            <option value="3">Tipo 3</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!--Costo de Toma-->
+                          <div class="row">
+                              <div class="col-lg-4 col-xs-4 col-md-4">
+                                      <label for="Nombre">Costo de toma:</label>
+                                      <input id="nombre" name="c_detoma" value="" type="text" placeholder="" class="form-control">
+                              </div>
+                              <div class="col-lg-4 col-xs-4 col-md-4" style="margin-top:24px">
+                                  <a href="#" class="btn btn-primary">
+                                    <i class="fa fa-dollar" aria-hidden="true"></i>Pagar
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <br/>
+                      <div id="step-3" class="content">
+                        <!----Nombre Ubicacion de la toma-->
+                        <div class="row">
+                            <div class="col-lg-4 col-xs-4 col-md-4">
+                                <div class="form-group">
+                                    <label for="">Número de Contrato:</label>
+                                    <div class="">
+                                        <input id="" name="" value="" type="text"  class="form-control input-md" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="form-group">
+                                  <fieldset>
+                                    <legend>Clasificacón de Toma</legend>
+                                  <div class="row">
+                                      <div class="col-lg-4">
+                                          <div class="form-group">
+                                              <label for="uso">Uso:</label>
+                                              <input id="uso" name="" value="" type="text" placeholder="" class="form-control">
+                                          </div>
+                                      </div>
+
+                                      <div class="col-lg-4">
+                                          <div class="form-group">
+                                              <label for="clase">Clase:</label>
+                                              <input id="clase" name="" value="" type="text" placeholder="" class="form-control">
+                                          </div>
+                                      </div>
+
+                                      <div class="col-lg-4">
+                                          <div class="form-group">
+                                              <label for="Servicio">Servicio:</label>
+                                              <input id="Servicio" name="" value="" type="text" placeholder="" class="form-control">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  </fieldset>
+                                </div>
+                              </div>
+
+                              </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="form-group">
+                              <fieldset>
+                                <legend>Datos del medidor</legend>
+                              <div class="row">
+                                  <div class="col-lg-2">
+                                      <div class="form-group">
+                                          <label for="clase">Número:</label>
+                                          <input id="clase" name="" value="" type="text" placeholder="" class="form-control">
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-2">
+                                      <div class="form-group">
+                                          <label for="">Diámetro:</label>
+                                          <input id="" name="" value="" type="text" placeholder="" class="form-control">
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-2">
+                                      <div class="form-group">
+                                          <label for="">Marca:</label>
+                                          <input id="" name="" value="" type="text" placeholder="" class="form-control">
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-2">
+                                      <div class="form-group">
+                                          <label for="">Modelo:</label>
+                                          <input id="" name="" value="" type="text" placeholder="" class="form-control">
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-2">
+                                      <div class="form-group">
+                                          <label for="">Indicadores:</label>
+                                          <input id="" name="" value="" type="text" placeholder="" class="form-control">
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-2">
+                                      <div class="form-group">
+                                          <label for="">Contratación:</label>
+                                          <input id="" name="" value="" type="text" placeholder="" class="form-control">
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-8">
+                                      <div class="form-group">
+                                          <label for="">Situación Actual:</label>
+                                          <select name="" class="form-control">
+                                            <option value="1">Tipo 1</option>
+                                            <option value="2">Tipo 2</option>
+                                            <option value="3">Tipo 3</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                </div>
+                                </fieldset>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+
+                        </div>
+                    <div class="actionBar">
+                  <!--Colocar con jquery-->
+                  <!--<div class="msgBox">-->
+                  <div class="">
+                    <div class="content"></div>
+                    <!--    <a href="#" class="close">X</a>-->
+                    <!--</div><div class="loader">Loading</div>-->
+                    <a href="#" class="buttonImpresionOrdenInspeccion btn btn-success">
+                      <i class="fa fa-print" aria-hidden="true"></i>
+                      Imprimir orden de Inspección</a>
+                    <a href="#" class="buttonNext btn btn-primary">
+                    <i class="fa fa-edit" aria-hidden="true"></i>
+                      Siguiente</a>
+                    <a href="#" class="buttonPrevious btn btn-primary">
+                    <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                      Guardar</a>
+                  </div>
+                </div>
+<!--Fin Formulario de contratación de servicios de Agua-->
+<br/>
+<br/>
+<!--
+                        <div class="form-group">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nombre <span class="required">*</span>
+                          </label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Apeido Paterno <span class="required">*</span>
+                          </label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Apeido Materno</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12">Genero</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div id="gender" class="btn-group" data-toggle="buttons">
+                              <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                <input type="radio" name="gender" value="male"> &nbsp; Hombre &nbsp;
+                              </label>
+                              <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                <input type="radio" name="gender" value="female"> Mujer
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12">Date Of Birth <span class="required">*</span>
+                          </label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                          </div>
+                        </div>-->
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /page content -->
+
+      <!-- footer content -->
+      <footer>
+        <div class="pull-right">
+          SAPAM - Sistema de Agua Potable <!--<a href="https://">#</a>-->
+        </div>
+        <div class="clearfix"></div>
+      </footer>
+      <!-- /footer content -->
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- FastClick -->
+  <script src="../vendors/fastclick/lib/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="../vendors/nprogress/nprogress.js"></script>
+
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom.min.js"></script>
+</body>
+</html>
