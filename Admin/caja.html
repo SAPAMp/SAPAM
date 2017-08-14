@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Contratación de Servicios de Agua</title>
+
+  <!-- Bootstrap -->
+  <link href="../Vendors/bootstrap/bootstrap.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <!-- <link href="../vendors/font-awesome/font-awesome.min.css" rel="stylesheet"> -->
+
+  <!-- Custom Theme Style -->
+  <link href="../build/CSS/custom.min.css" rel="stylesheet">
+
+  <script src=../Vendors/font-awesome/awesome.js></script>
+</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left_col">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0;">
+            <a href="index.html" class="site_title"><i class="fa fa-clone"></i> <span>SAPAM</span></a>
+          </div>
+          <div class="clearfix"></div>
+          <br />
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <h3>Modulos</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a></li>
+                <li><a><i class="fa fa-edit"></i> Contratos <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="wizardSolServicio.html">Solicitud de Servicio</a></li>
+                    <li><a href="caja.html">Caja</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-table"></i> Reportes <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="tables.html">Reportes</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-bar-chart-o"></i> Dashboard <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="chartjs.html">Chart JS</a></li>
+                    <li><a href="chartjs2.html">Chart JS2</a></li>
+                    <li><a href="morisjs.html">Moris JS</a></li>
+                    <li><a href="echarts.html">ECharts</a></li>
+                    <li><a href="other_charts.html">Other Charts</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- /sidebar menu -->
+        </div>
+      </div>
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="nav_menu">
+          <nav>
+            <div class="nav toggle">
+              <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <!--<img src="images/img.jpg" alt="">-->Invitado
+                  <span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- /top navigation -->
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <div class="">
+          <div class="page-title">
+            <div class="title_left">
+              <h3>Módula de Caja</h3>
+            </div>
+
+            <div class="title_right">
+              <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Buscar por contrato...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">Ir</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>Recaudación del Sistema Potable de Agua</h2>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                  <!-- Smart Wizard -->
+                  <p>Busque por Número de Contrato / Nombre del usuario</p>
+                      <div id="s" style="display=none" class="content">
+                        <!----Nombre Ubicacion de la toma-->
+                        <div class="row">
+                          <div class="col-lg-8 col-xs-8 col-md-8">
+                            <div class="form-group">
+                              <label for="">Número de Contrato / Nombre:</label>
+                              <div class="">
+                                <input id="" name="" value="" type="text" class="form-control input-md">
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="form-group">
+                              <fieldset>
+                                <legend>Datos del Contribuyente</legend>
+                                <div class="row">
+                                  <div class="col-lg-4">
+                                    <div class="form-group">
+                                      <label for="uso">Nombre:</label>
+                                      <input id="uso" name="" value="" type="text" placeholder="" class="form-control" readonly>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-lg-4">
+                                    <div class="form-group">
+                                      <label for="clase">Direccion:</label>
+                                      <input id="clase" name="" value="" type="text" placeholder="" class="form-control" readonly>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-lg-4">
+                                    <div class="form-group">
+                                      <label for="Servicio">Contrato:</label>
+                                      <input id="Servicio" name="" value="" type="text" placeholder="" class="form-control" readonly>
+                                    </div>
+                                  </div>
+                                </div>
+                              </fieldset>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="form-group">
+                              <fieldset>
+                                <legend>Situación del Contribuyente</legend>
+                                <div class="row">
+                                  <div class="col-lg-2">
+                                    <div class="form-group">
+                                      <label for="clase">Adeudo:</label>
+                                      <h1>$1,500</h1>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-2">
+                                    <div class="form-group">
+                                      <label for="">Abono Propuesto:</label>
+                                      <input id="" name="" value="" type="text" placeholder="" class="form-control" readonly>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-2">
+                                    <div class="form-group">
+                                      <label for="">Abono:</label>
+                                      <input id="" name="" value="" type="text" placeholder="" class="form-control">
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-2">
+                                    <div class="form-group">
+                                      <label for="">Monto Actual:</label>
+                                      <input id="" name="" value="" type="text" placeholder="" class="form-control">
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class="row">
+
+                                  <div class="col-lg-2 col-xs-2 col-md-2">
+
+                                  </div>
+                                  <div class="col-lg-3 col-xs-2 col-md-2">
+                                    <label class="radio-inline"><input type="radio" name="optradio">10%</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">20%</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">30%</label>
+                                  </div>
+                                  <div class="col-lg-4">
+                                    <div class="form-group">
+                                      <a href="#" class="btn btn-primary">
+                                        <i class="fa fa-dollar" aria-hidden="true"></i>Pagar
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <!--</div>-->
+                    <!--Fin Formulario de contratación de servicios de Agua-->
+                    <br/>
+                    <br/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            SAPAM - Sistema de Agua Potable
+            <!--<a href="https://">#</a>-->
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+
+
+
+    <!-- jQuery Smart Wizard -->
+    <script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.js"></script>
+</body>
+
+</html>
