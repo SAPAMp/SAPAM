@@ -120,7 +120,7 @@
                     <ul class="wizard_steps">
                       <li class="col-lg-4 col-xs-4 col-md-4 no-padding">
                         <a href="#step-1">
-                        <!-- <a href="#step-1" class="selected" rel="1"> -->
+                          <!-- <a href="#step-1" class="selected" rel="1"> -->
                           <span class="step_no">1</span>
                           <span class="step_descr">
                                 Paso 1<br />
@@ -148,316 +148,420 @@
                       </li>
                     </ul>
                     <!--<div class="stepContainer">-->
-                      <div id="step-1" style="display=block" class="content">
-                        <form class="form-horizontal form-label-left">
-                          <!--Formulario de contratación de servicios de Agua-->
-                          <div class="row">
-                            <div class="col-lg-12">
+                    <div id="step-1" style="display=block" class="content">
+                      <form class="form-horizontal form-label-left">
+                        <!--Formulario de contratación de servicios de Agua-->
+                        <div class="row">
+                          <div class="col-lg-12">
 
 
-                              <h2>Creacion Número de Contrato</h2>
-                              <br/>
-                              </br/>
-                              <!----Nombre Completo-->
-                              <div class="row">
-                                <div class="col-lg-4 col-xs-4 col-md-4">
-                                  <div class="form-group">
-                                    <label for="Nombre">Nombre:</label>
-                                    <input id="nombre" name="nombre" value="" type="text" placeholder="Escribe Nombre" class="form-control">
-                                  </div>
-                                </div>
-
-                                <div class="col-lg-8 col-xs-8 col-md-8">
-                                  <div class="form-group">
-                                    <label for="Apellido Paterno">Apellido:</label>
-                                    <input id="apeidoPaterno" name="apeidoPaterno" value="" type="text" placeholder="Escribe Apellido Paterno" class="form-control">
-                                  </div>
-                                </div>
-
-
-                              </div>
-                              <!--Dirección-->
-                              <div class="row">
-                                <div class="col-lg-8 col-xs-8 col-md-8">
-                                  <div class="form-group">
-                                    <label for="direccion">Dirección:</label>
-                                    <input id="direccion" name="direccion" value="" type="text" placeholder="Escribe dirección" class="form-control input-md" required="required">
-                                  </div>
-                                </div>
-                                <div class="col-lg-4 col-xs-4 col-md-4">
-                                  <div class="form-group">
-                                    <label for="correo">Correo:</label>
-                                    <input id="correo" name="correo" value="" type="text" placeholder="Escribe correo" class="form-control">
-                                  </div>
+                            <h2>Creacion Número de Contrato</h2>
+                            <br/>
+                            </br/>
+                            <!----Nombre Completo-->
+                            <div class="row">
+                              <div class="col-lg-4 col-xs-4 col-md-4">
+                                <div class="form-group">
+                                  <label for="Nombre">Nombre:</label>
+                                  <input id="nombre" name="nombre" value="" type="text" placeholder="Escribe Nombre" class="form-control">
                                 </div>
                               </div>
-                              <!--Colonia-->
-                              <div class="row">
-                                <div class="col-lg-8 col-xs-8 col-md-8">
-                                  <div class="form-group">
-                                    <label for="colonia">Colonia:</label>
-                                    <input id="colonia" name="colonia" value="" type="text" placeholder="Escribe colonia" class="form-control input-md" required="required">
-                                  </div>
+
+                              <div class="col-lg-8 col-xs-8 col-md-8">
+                                <div class="form-group">
+                                  <label for="Apellido Paterno">Apellido:</label>
+                                  <input id="apeidoPaterno" name="apeidoPaterno" value="" type="text" placeholder="Escribe Apellido Paterno" class="form-control">
                                 </div>
-                                <div class="col-lg-4 col-xs-4 col-md-4">
-                                  <div class="form-group">
-                                    <label for="telefono">Telefono:</label>
-                                    <div class=".col-xs-6 .col-md-4">
-                                      <input id="telefono" name="numtelefono" value="" type="text" class="form-control input-md">
-                                    </div>
+                              </div>
+
+
+                            </div>
+                            <!--Dirección-->
+                            <div class="row">
+                              <div class="col-lg-8 col-xs-8 col-md-8">
+                                <div class="form-group">
+                                  <label for="direccion">Dirección:</label>
+                                  <input id="direccion" name="direccion" value="" type="text" placeholder="Escribe dirección" class="form-control input-md" required="required">
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-4 col-md-4">
+                                <div class="form-group">
+                                  <label for="correo">Correo:</label>
+                                  <input id="correo" name="correo" value="" type="text" placeholder="Escribe correo" class="form-control">
+                                </div>
+                              </div>
+                            </div>
+                            <!--Colonia-->
+                            <div class="row">
+                              <div class="col-lg-8 col-xs-8 col-md-8">
+                                <div class="form-group">
+                                  <label for="colonia">Colonia:</label>
+                                  <input id="colonia" name="colonia" value="" type="text" placeholder="Escribe colonia" class="form-control input-md" required="required">
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-4 col-md-4">
+                                <div class="form-group">
+                                  <label for="telefono">Telefono:</label>
+                                  <div class=".col-xs-6 .col-md-4">
+                                    <input id="telefono" name="numtelefono" value="" type="text" class="form-control input-md">
                                   </div>
                                 </div>
                               </div>
-                              <!--  ubicación de la toma -->
-                              <!----Nombre Ubicacion de la toma-->
-                              <div class="row">
-                                <div class="col-lg-8">
-                                  <div class="form-group">
-                                    <fieldset>
-                                      <legend>Ubicación de la toma</legend>
-                                      <div class="row">
-                                        <div class="col-lg-2">
-                                          <div class="form-group">
-                                            <label for="sector">Sector:</label>
-                                            <input id="sector" name="sector" value="" type="text" placeholder="" class="form-control">
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2">
-                                          <div class="form-group">
-                                            <label for="manzana">Manzana:</label>
-                                            <input id="manzana" name="manzana" value="" type="text" placeholder="" class="form-control">
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2">
-                                          <div class="form-group">
-                                            <label for="lote">Lote:</label>
-                                            <input id="lote" name="lote" value="" type="text" placeholder="" class="form-control">
-                                          </div>
-                                        </div>
-                                        <div class="col-lg-4">
-                                          <div class="form-group">
-                                            <label for="ruta">Ruta:</label>
-                                            <input id="ruta" name="ruta" value="" type="text" placeholder="" class="form-control">
-                                          </div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                          <div class="form-group">
-                                            <label for="progresivo">Progresivo:</label>
-                                            <input id="progresivo" name="progresivo" value="" type="text" placeholder="" class="form-control">
-                                          </div>
+                            </div>
+                            <!--  ubicación de la toma -->
+                            <!----Nombre Ubicacion de la toma-->
+                            <div class="row">
+                              <div class="col-lg-8">
+                                <div class="form-group">
+                                  <fieldset>
+                                    <legend>Ubicación de la toma</legend>
+                                    <div class="row">
+                                      <div class="col-lg-2">
+                                        <div class="form-group">
+                                          <label for="sector">Sector:</label>
+                                          <input id="sector" name="sector" value="" type="text" placeholder="" class="form-control">
                                         </div>
                                       </div>
-                                    </fieldset>
-                                  </div>
-                                </div>
-                                <div class="col-lg-4 col-xs-4 col-md-4">
-                                  <div class="form-group">
-                                    <label for="habitantes">Habitantes:</label>
-                                    <div class="">
-                                      <input id="habitantes" name="habitantes" value="" type="text" class="form-control input-md">
+
+                                      <div class="col-lg-2">
+                                        <div class="form-group">
+                                          <label for="manzana">Manzana:</label>
+                                          <input id="manzana" name="manzana" value="" type="text" placeholder="" class="form-control">
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-2">
+                                        <div class="form-group">
+                                          <label for="lote">Lote:</label>
+                                          <input id="lote" name="lote" value="" type="text" placeholder="" class="form-control">
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-4">
+                                        <div class="form-group">
+                                          <label for="ruta">Ruta:</label>
+                                          <input id="ruta" name="ruta" value="" type="text" placeholder="" class="form-control">
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-2">
+                                        <div class="form-group">
+                                          <label for="progresivo">Progresivo:</label>
+                                          <input id="progresivo" name="progresivo" value="" type="text" placeholder="" class="form-control">
+                                        </div>
+                                      </div>
                                     </div>
+                                  </fieldset>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-xs-4 col-md-4">
+                                <div class="form-group">
+                                  <label for="habitantes">Habitantes:</label>
+                                  <div class="">
+                                    <input id="habitantes" name="habitantes" value="" type="text" class="form-control input-md">
                                   </div>
                                 </div>
                               </div>
-                              <!--giro-->
-                              <div class="row">
-                                <div class="col-lg-12 col-xs-12 col-md-12">
-                                  <div class="form-group">
-                                    <label for="title">Giro:</label>
-                                    <div class="">
-                                      <select name="giro_id" class="form-control">
+                            </div>
+                            <!--giro-->
+                            <div class="row">
+                              <div class="col-lg-12 col-xs-12 col-md-12">
+                                <div class="form-group">
+                                  <label for="title">Giro:</label>
+                                  <div class="">
+                                    <select name="giro_id" class="form-control">
                                                         <option value="1">Tipo 1</option>
                                                         <option value="2">Tipo 2</option>
                                                         <option value="3">Tipo 3</option>
                                                   </select>
-                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </form>
-                      </div>
-                      <br/>
-                      <div id="step-2" style="display=none" class="content">
-                        <!--Fecha de inspección-->
-                        <div class="row">
-                          <div class="col-lg-4 col-xs-4 col-md-4">
-                            <div class="form-group">
-                              <label for="Nombre">Fecha de inspección:</label>
-                              <input id="nombre" name="f_inspeccion" value="" type="text" placeholder="" class="form-control">
-                            </div>
+                        </div>
+                      </form>
+                    </div>
+                    <br/>
+                    <div id="step-2" style="display=none" class="content">
+                      <!--Fecha de inspección-->
+                      <div class="row">
+                        <div class="col-lg-4 col-xs-4 col-md-4">
+                          <div class="form-group">
+                            <label for="Nombre">Fecha de inspección:</label>
+                            <input id="nombre" name="f_inspeccion" value="" type="text" placeholder="" class="form-control">
                           </div>
                         </div>
-                        <!--Tipo de toma-->
-                        <div class="row">
-                          <div class="col-lg-8 col-xs-8 col-md-8">
-                            <div class="form-group">
-                              <label for="title">Tipo de toma:</label>
-                              <div class="">
-                                <select name="tipo_toma" class="form-control">
+                      </div>
+                      <!--Tipo de toma-->
+                      <div class="row">
+                        <div class="col-lg-8 col-xs-8 col-md-8">
+                          <div class="form-group">
+                            <label for="title">Tipo de toma:</label>
+                            <div class="">
+                              <select name="tipo_toma" class="form-control">
                                               <option value="1">Tipo 1</option>
                                               <option value="2">Tipo 2</option>
                                               <option value="3">Tipo 3</option>
                                             </select>
-                              </div>
                             </div>
-                          </div>
-                        </div>
-                        <!--Costo de Toma-->
-                        <div class="row">
-                          <div class="col-lg-4 col-xs-4 col-md-4">
-                            <label for="Nombre">Costo de toma:</label>
-                            <input id="nombre" name="c_detoma" value="" type="text" placeholder="" class="form-control">
-                          </div>
-                          <div class="col-lg-4 col-xs-4 col-md-4" style="margin-top:24px">
-                            <a href="#" class="btn btn-primary">
-                                      <i class="fa fa-dollar" aria-hidden="true"></i>Pagar
-                                    </a>
                           </div>
                         </div>
                       </div>
-                      <br/>
-                      <div id="step-3" style="display=none" class="content">
-                        <!----Nombre Ubicacion de la toma-->
-                        <div class="row">
-                          <div class="col-lg-4 col-xs-4 col-md-4">
-                            <div class="form-group">
-                              <label for="">Número de Contrato:</label>
-                              <div class="">
-                                <input id="" name="" value="" type="text" class="form-control input-md" readonly>
+                      <!--Costo de Toma-->
+                      <div class="row">
+                        <div class="col-lg-4 col-xs-4 col-md-4">
+                          <label for="Nombre">Costo de toma:</label>
+                          <input id="nombre" name="c_detoma" value="" type="text" placeholder="" class="form-control">
+                        </div>
+                        <div class="col-lg-2 col-xs-4 col-md-4" style="margin-top:24px">
+                          <!-- modals -->
+                          <!-- Large modal -->
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Lista Material</button>
+                          <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                                  <h4 class="modal-title" id="myModalLabel">Resumen de Materiales</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="x_panel">
+                                    <div class="x_title">
+                                      <h2>Obra Negra <small>SAPAM</small></h2>
+                                      <ul class="nav navbar-right panel_toolbox">
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+                                        <li class="dropdown">
+                                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                          <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">No. 1</a></li>
+                                            <li><a href="#">No. 2</a></li>
+                                          </ul>
+                                        </li>
+                                        <li><a class="close-link"><i class="fa fa-close"></i></a></li>
+                                      </ul>
+                                      <div class="clearfix"></div>
+                                    </div>
+                                    <div class="x_content">
+                                      <table class="table table-striped">
+                                        <thead>
+                                          <tr>
+                                            <th>No.</th>
+                                            <th>Fecha</th>
+                                            <th>Material</th>
+                                            <th>Importe</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>01 de Enero 2017</td>
+                                            <td>bultos de Cemento</td>
+                                            <td>450.00</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>01 de Enero 2017</td>
+                                            <td>Cadenas y Zapatas</td>
+                                            <td>250.00</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td>01 de Enero 2017</td>
+                                            <td>Mano de Obra</td>
+                                            <td>150.00</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <div class="x_content">
+                                      <table class="table table-striped">
+                                        <thead>
+                                          <tr>
+                                            <th>No.</th>
+                                            <th>Fecha</th>
+                                            <th>Material</th>
+                                            <th>Importe</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>01 de Enero 2017</td>
+                                            <td>Codos</td>
+                                            <td>50.00</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>01 de Enero 2017</td>
+                                            <td>Tuberías</td>
+                                            <td>70.00</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td>01 de Enero 2017</td>
+                                            <td>Cinta</td>
+                                            <td>10.00</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+
+
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                </div>
+
                               </div>
                             </div>
                           </div>
-                          <div class="col-lg-8">
-                            <div class="form-group">
-                              <fieldset>
-                                <legend>Clasificacón de Toma</legend>
-                                <div class="row">
-                                  <div class="col-lg-4">
-                                    <div class="form-group">
-                                      <label for="uso">Uso:</label>
-                                      <input id="uso" name="" value="" type="text" placeholder="" class="form-control">
-                                    </div>
-                                  </div>
-
-                                  <div class="col-lg-4">
-                                    <div class="form-group">
-                                      <label for="clase">Clase:</label>
-                                      <input id="clase" name="" value="" type="text" placeholder="" class="form-control">
-                                    </div>
-                                  </div>
-
-                                  <div class="col-lg-4">
-                                    <div class="form-group">
-                                      <label for="Servicio">Servicio:</label>
-                                      <input id="Servicio" name="" value="" type="text" placeholder="" class="form-control">
-                                    </div>
-                                  </div>
-                                </div>
-                              </fieldset>
+                        </div>
+                        <div class="col-lg-4 col-xs-4 col-md-4" style="margin-top:24px">
+                          <a href="#" class="btn btn-primary">
+                                      <i class="fa fa-dollar" aria-hidden="true"></i>Pagar
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                    <br/>
+                    <div id="step-3" style="display=none" class="content">
+                      <!----Nombre Ubicacion de la toma-->
+                      <div class="row">
+                        <div class="col-lg-4 col-xs-4 col-md-4">
+                          <div class="form-group">
+                            <label for="">Número de Contrato:</label>
+                            <div class="">
+                              <input id="" name="" value="" type="text" class="form-control input-md" readonly>
                             </div>
                           </div>
-
                         </div>
-                        <div class="row">
-                          <div class="col-lg-12">
-                            <div class="form-group">
-                              <fieldset>
-                                <legend>Datos del medidor</legend>
-                                <div class="row">
-                                  <div class="col-lg-2">
-                                    <div class="form-group">
-                                      <label for="clase">Número:</label>
-                                      <input id="clase" name="" value="" type="text" placeholder="" class="form-control">
-                                    </div>
+                        <div class="col-lg-8">
+                          <div class="form-group">
+                            <fieldset>
+                              <legend>Clasificacón de Toma</legend>
+                              <div class="row">
+                                <div class="col-lg-4">
+                                  <div class="form-group">
+                                    <label for="uso">Uso:</label>
+                                    <input id="uso" name="" value="" type="text" placeholder="" class="form-control">
                                   </div>
-                                  <div class="col-lg-2">
-                                    <div class="form-group">
-                                      <label for="">Diámetro:</label>
-                                      <input id="" name="" value="" type="text" placeholder="" class="form-control">
-                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                  <div class="form-group">
+                                    <label for="clase">Clase:</label>
+                                    <input id="clase" name="" value="" type="text" placeholder="" class="form-control">
                                   </div>
-                                  <div class="col-lg-2">
-                                    <div class="form-group">
-                                      <label for="">Marca:</label>
-                                      <input id="" name="" value="" type="text" placeholder="" class="form-control">
-                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                  <div class="form-group">
+                                    <label for="Servicio">Servicio:</label>
+                                    <input id="Servicio" name="" value="" type="text" placeholder="" class="form-control">
                                   </div>
-                                  <div class="col-lg-2">
-                                    <div class="form-group">
-                                      <label for="">Modelo:</label>
-                                      <input id="" name="" value="" type="text" placeholder="" class="form-control">
-                                    </div>
+                                </div>
+                              </div>
+                            </fieldset>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="form-group">
+                            <fieldset>
+                              <legend>Datos del medidor</legend>
+                              <div class="row">
+                                <div class="col-lg-2">
+                                  <div class="form-group">
+                                    <label for="clase">Número:</label>
+                                    <input id="clase" name="" value="" type="text" placeholder="" class="form-control">
                                   </div>
-                                  <div class="col-lg-2">
-                                    <div class="form-group">
-                                      <label for="">Indicadores:</label>
-                                      <input id="" name="" value="" type="text" placeholder="" class="form-control">
-                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                  <div class="form-group">
+                                    <label for="">Diámetro:</label>
+                                    <input id="" name="" value="" type="text" placeholder="" class="form-control">
                                   </div>
-                                  <div class="col-lg-2">
-                                    <div class="form-group">
-                                      <label for="">Contratación:</label>
-                                      <input id="" name="" value="" type="text" placeholder="" class="form-control">
-                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                  <div class="form-group">
+                                    <label for="">Marca:</label>
+                                    <input id="" name="" value="" type="text" placeholder="" class="form-control">
                                   </div>
-                                  <div class="col-lg-8">
-                                    <div class="form-group">
-                                      <label for="">Situación Actual:</label>
-                                      <select name="" class="form-control">
+                                </div>
+                                <div class="col-lg-2">
+                                  <div class="form-group">
+                                    <label for="">Modelo:</label>
+                                    <input id="" name="" value="" type="text" placeholder="" class="form-control">
+                                  </div>
+                                </div>
+                                <div class="col-lg-2">
+                                  <div class="form-group">
+                                    <label for="">Indicadores:</label>
+                                    <input id="" name="" value="" type="text" placeholder="" class="form-control">
+                                  </div>
+                                </div>
+                                <div class="col-lg-2">
+                                  <div class="form-group">
+                                    <label for="">Contratación:</label>
+                                    <input id="" name="" value="" type="text" placeholder="" class="form-control">
+                                  </div>
+                                </div>
+                                <div class="col-lg-8">
+                                  <div class="form-group">
+                                    <label for="">Situación Actual:</label>
+                                    <select name="" class="form-control">
                                                 <option value="1">Tipo 1</option>
                                                 <option value="2">Tipo 2</option>
                                                 <option value="3">Tipo 3</option>
                                               </select>
-                                    </div>
                                   </div>
                                 </div>
-                              </fieldset>
-                            </div>
+                              </div>
+                            </fieldset>
                           </div>
                         </div>
                       </div>
+                    </div>
                   </div>
-                    <!--</div>-->
-                    <!--Fin Formulario de contratación de servicios de Agua-->
-                    <br/>
-                    <br/>
-                  </div>
+                  <!--</div>-->
+                  <!--Fin Formulario de contratación de servicios de Agua-->
+                  <br/>
+                  <br/>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- /page content -->
-
-        <!-- footer content -->
-        <footer>
-          <div class="pull-right">
-            SAPAM - Sistema de Agua Potable
-            <!--<a href="https://">#</a>-->
-          </div>
-          <div class="clearfix"></div>
-        </footer>
-        <!-- /footer content -->
       </div>
+      <!-- /page content -->
+
+      <!-- footer content -->
+      <footer>
+        <div class="pull-right">
+          SAPAM - Sistema de Agua Potable
+          <!--<a href="https://">#</a>-->
+        </div>
+        <div class="clearfix"></div>
+      </footer>
+      <!-- /footer content -->
     </div>
+  </div>
 
-    <!-- jQuery -->
-    <script src="../vendors/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- FastClick -->
-    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- FastClick -->
+  <script src="../vendors/fastclick/lib/fastclick.js"></script>
 
 
 
-    <!-- jQuery Smart Wizard -->
-    <script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
-    <!-- Custom Theme Scripts -->
-    <script src="../build/js/custom.js"></script>
+  <!-- jQuery Smart Wizard -->
+  <script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom.js"></script>
 </body>
 
 </html>
